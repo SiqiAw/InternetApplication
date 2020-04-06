@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My To-Do List</title>
+	<link rel="stylesheet" type="text/css" href="to-do-list-style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="todolist32X32.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="todolist16X16.jpg" sizes="16x16" />
+</head>
+<body>
+
+	<div id="header">
+		<h4 style="margin: 5px;">My To-Do List</h4>
+		<input type="text" id="myInput" placeholder="What to do......">
+      	<span onclick="newElement()" class="addBtn">Add</span>
+	</div>
+
+	<ul id="myUL">
+      	<li class="checked">Internet Application Project</li>
+      	<li class="checked">Click I done it to clear</li>
+      	<li>To-do list for you</li>
+      	<li>Hope you guys like it</li>
+    </ul>
+
+    <button type="button" id="clear-list" onclick="removeAll()">I Done It!</button>
+
+    <script type="text/javascript" src="to-do-list.js"></script>
+
+</body>
+</html>
