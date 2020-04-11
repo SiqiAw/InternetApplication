@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+.logoName,h1 {
+	display: flex;
+	flex-direction: row;
+	padding-left: 30px;
+}
+
+@media (max-width: 970px) {
+	.logoName {
+		display: block;
+	}
+}
+
+.intro,ol,li {
+	font-family: 'Noto Sans SC', sans-serif;
+}
+
+button {
+	font-size: 20px;
+	padding: 3px;
+	border-radius: 10px;
+	background-color: #00FFFF;
+	width: 100%;
+}
+
+button:hover {
+	background-color: #C0C0C0;
+}
+
+
+.asterisk {
+	color: red;
+}
+
+#logo {
+	width: 200px;
+}
+
+@media (max-width: 970px) {
+	#logo {
+		width: 50%;
+	}
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.heading {
+	margin: 0px;
+	background-color: #00FFFF;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.intakeAndChoice,.personalInform,
+.familyDetail,.academicQualification {
+	border: 1px solid blue;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.list-group {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 15px;
+}
+
+.list-group:last-child {
+	border-bottom: 0px;
+}
+
+#choice,#Cname,#Ename,#birthday,
+#SPnum,#email,#address,#area,
+#postcode,#nIC,#secondary {
+	border-radius: 5px;
+	width: 550px;
+	height: 25px;
+}
+
+@media (max-width: 970px) {
+	#choice,#Cname,#Ename,
+	#birthday,#SPnum,#email,
+	#address,#area,#postcode,
+	#nIC,#subject,#grade {
+		display: block;
+		width: 100%;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,td {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+}
+
+
+@media (max-width: 970px) {
+	.display-none {
+		display: none;
+	}
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+#subject,#grade {
+	width: 200px;
+	height: 25px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px 10px;
+}
