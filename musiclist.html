@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="musiclist-style.css">
+	<script src="https://kit.fontawesome.com/634430a69d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<main>
+		<aside class="sm-hide"><!--This represents the sidebar and contained
+in it are icon sets from font-awesome--> 
+			<i class="fa fa-bars"></i>
+			<i class="fa fa-home"></i>
+			<i class="fa fa-search"></i>
+			<i class="fa fa-volume-up"></i>
+			<i class="fa fa-user"></i>
+			<i class="fab fa-spotify"></i>
+			<i class="fa fa-cog"></i>
+			<i class="fab fa-soundcloud"></i> 
+		</aside>
+
+		<section class="content">
+<!--This section will house everything other than the
+sidebar-->
+			<!--First list item: contains music details--> 
+			<div class="music-head">
+				
+				<!--Album art-->
+				<img src="images/City_Lights.png">
+				<section class="catty-music">
+					<!--other detail of the album-->
+					<div>
+						<p class="sm-text-center">City Lights</p>
+						<p class="sm-hide">BaekHyun</p>
+						<p class="sm-hide">2019 . 1st Mini Album . City Lights</p>
+					</div>
+
+					<div class="sm-text-center"><!--Music controls-->
+						<i class="fas fa-play">&nbsp;Play all</i>
+						<i class="fas fa-plus">&nbsp;Add to</i>
+						<i class="fas fa-ellipsis-h">&nbsp;&nbsp;More</i>
+					</div>
+				</section>
+
+			</div><!--end .music-head-->
+
+			<!--Second listitem: Contains a list of all song displayed-->
+
+			<ul class="music-list">
+				<li>
+					<p>1. UN Village</p>
+					<p class="sm-hide">Baekhyun</p>
+					<p class="sm-text-right">4:03</p>
+					<p class="sm-hide"><span class="catty-cloud">City Lights</span></p>
+				</li>
+
+				<li>
+					<p>2. Betcha</p>
+					<p class="sm-hide">Baekhyun</p>
+					<p class="sm-text-right">3:21</p>
+					<p class="sm-hide"><span class="catty-cloud">City Lights</span></p>
+				</li>
+
+				<li>
+					<p>3. Ice Queen</p>
+					<p class="sm-hide">Baekhyun</p>
+					<p class="sm-text-right">3:35</p>
+					<p class="sm-hide"><span class="catty-cloud">City Lights</span></p>
+				</li>
+
+				<li>
+					<p>4. Diamond</p>
+					<p class="sm-hide">Baekhyun</p>
+					<p class="sm-text-right">3:57</p>
+					<p class="sm-hide"><span class="catty-cloud">City Lights</span></p>
+				</li>
+
+				<li>
+					<p>5. Psycho(Bonus Track)</p>
+					<p class="sm-hide">Baekhyun</p>
+					<p class="sm-text-right">3:26</p>
+					<p class="sm-hide"><span class="catty-cloud">City Lights</span></p>
+				</li>
+
+				<li>
+					<p>6. Stay Up</p>
+					<p class="sm-hide">Baekhyun &amp; Beenzino</p>
+					<p class="sm-text-right">3:27</p>
+					<p class="sm-hide"><span class="catty-cloud">City Lights</span></p>
+				</li>
+			</ul>
+		</section>
+	</main><!--to contain the main section of the
+app-->
+	
+	<footer>
+		<div class="item2a">
+			<img src="images/City_Lights.png" class="sm-hide">
+			<div>
+				<p> UN Village</p>
+				<p> BaekHyun</p>
+			</div>
+		</div>
+
+		<div class="item2b">
+			<i class="fa fa-step-backward"></i>
+			<i class="fa fa-pause"></i>
+			<i class="fa fa-step-forward"></i>
+			<i class="fa fa-rotate-right sm-hide"></i>
+			<i class="fa fa-random sm-hide"></i>
+		</div>
+		
+	</footer> <!--to contain the music control
+buttons and song details-->
+</body>
+</html>
