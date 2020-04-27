@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Pet Shop</title>
+	<link rel="stylesheet" type="text/css" href="appointment.css">
+	<script type="text/javascript" src="appointment.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Ma+Shan+Zheng&family=Patrick+Hand&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/634430a69d.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="images/logo32X32.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/logo16X16.jpg" sizes="16x16" />
+</head>
+<body>
+
+	<nav>
+		<div id="navbar">
+		    <span class="navbar-toggle" id="js-navbar-toggle">
+				<i class="fa fa-bars"></i>
+			</span>
+
+		    <a href="homepage.html" class="logo">My Pet Shop</a>
+
+		    <ul class="main-nav" id="js-menu">
+		    	<li><a href="homepage.html">Home</a></li>
+		        <li><a href="highlight.html">Highlights</a></li>
+		        <!-- <li><a href="appointment.html">Appoinment</a></li> -->	
+		    </ul>
+		        
+		</div>
+	</nav>
+
+		<div class="title">
+			<h1>Make Appointment Here!</h1>
+		</div>
+
+		<form name='registration' onsubmit="return formValidation()">
+			<ul>
+				<li><label for="name">* Name:</label></li>
+				<li><input type="text" name="name" id="name" required></li>
+				
+				<li><label for="phone">* Phone:</label></li>
+				<li><input type="text" name="phone" id="phone" required></li>
+				
+				<li><label for="mail">* Email:</label></li>
+				<li><input type="text" name="mail" id="mail" required></li>
+				
+				<li><label for="time">* Appoinment Time:</label></li>
+				<li><input type="datetime-local" name="appointment" id="aTime" required></li>
+				
+				<li><label for="count">How many pet you bring?</label></li>
+				<li><input type="number" name="number" id="count"></li>
+				
+				<li><label for="kind">What kind of your pet?</label></li>
+				<li><input type="text" name="kind" id="kind"></li>
+				
+				<li><label for="more">Opinion:</label></li>
+				<li><textarea id="more"></textarea></li>
+
+				<li><button type="submit">Make Appoinment</button></li>
+			</ul>
+		</form>
+
+</body>
+
+<script src="appointment.js"></script>
+<script type="text/javascript">
+	let mainNav = document.getElementById('js-menu');
+	let navBarToggle = document.getElementById('js-navbar-toggle');
+
+	navBarToggle.addEventListener('click', function () {
+		mainNav.classList.toggle('active');
+	});
+</script>
+</html>

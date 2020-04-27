@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Pet Shop</title>
+	<link rel="stylesheet" type="text/css" href="highlight.css">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Ma+Shan+Zheng&family=Patrick+Hand&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/634430a69d.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="images/logo32X32.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/logo16X16.jpg" sizes="16x16" />
+</head>
+<body>
+	
+    <nav>
+		<div id="navbar">
+		    <span class="navbar-toggle" id="js-navbar-toggle">
+				<i class="fa fa-bars"></i>
+			</span>
+
+		    <a href="homepage.html" class="logo">My Pet Shop</a>
+
+		    <ul class="main-nav" id="js-menu">
+		    	<li><a href="homepage.html">Home</a></li>
+		        <!-- <li><a href="highlight.html">Highlights</a></li> -->
+		        <li><a href="appointment.html">Appoinment</a></li>	
+		    </ul>
+		        
+		</div>
+	</nav>
+
+	<h3 class="intro_animal">Highlights of Our Customers and their Pets!</h3>
+    	<div class="wrapped">
+	    	<div class="animal">
+	    		<img src="images/comment1.png">
+	    	</div>
+
+	    	<div class="animal">
+	    		<img src="images/comment2.png">
+	    	</div>
+
+	    	<div class="animal">
+	    		<img src="images/comment3.png">
+	    	</div>
+
+	    	<div class="animal">
+	    		<img src="images/comment4.jpg">
+	    	</div>
+	    </div>
+
+	    <hr>
+
+    <h3 class="intro_dessert">Highlights of Our Special Desserts!</h3>
+    	<div class="wrapped">
+	    	<div class="dessert">
+	    		<img src="images/comment5.png">
+	    	</div>
+
+	    	<div class="dessert">
+	    		<img src="images/comment6.png">
+	    	</div>
+
+	    	<div class="dessert">
+	    		<img src="images/comment7.png">
+	    	</div>
+
+	    	<div class="dessert">
+	    		<img src="images/comment8.png">
+	    	</div>
+    	</div>
+    </div>
+</body>
+
+<script>	
+	let mainNav = document.getElementById('js-menu');
+	let navBarToggle = document.getElementById('js-navbar-toggle');
+
+	navBarToggle.addEventListener('click', function () {
+		mainNav.classList.toggle('active');
+	});
+</script>
+</html>

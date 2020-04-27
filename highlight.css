@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	background-image: linear-gradient(45deg, #FFF6B7, #F6416C);
+}
+
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1.5em;
+  font-family: 'Acme', sans-serif;
+  margin-left: 20px;
+}
+
+.main-nav a {
+  display: flex; 
+  justify-content: center;   
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Acme', sans-serif;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.main-nav {
+  display: none;
+  list-style-type: none;
+}
+
+.active {
+  display: block;
+  background-color: #717171;
+}
+
+.wrapped {
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: 350px 350px; /*Make the grid smaller than the container*/
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+@media (max-width: 500px) {
+	.wrapped {
+		display: grid;
+		grid-template-columns: 350px;
+		width: 100%;
+	}
+}
+
+img {
+	max-width: 100%;
+	width: 350px;
+}
+
+.intro_animal,.intro_dessert {
+	margin-top: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: 'Patrick Hand', cursive;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 3px 0;
+    border-radius: 20px;
+}
