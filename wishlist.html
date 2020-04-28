@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Christmas Holiday</title>
+	<script src="https://kit.fontawesome.com/634430a69d.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="christmas.css">
+</head>
+<body>
+		<div class="wrapper">
+			<span class="sidebar-toggle" id="js-sidebar-toggle">
+				<i class="fa fa-bars"></i>
+			</span>
+
+			<div class="sidebar" id="js-sidebar">
+				<h2>menu</h2>
+				<ul>
+					<li>
+						<a href="homepage.html">
+							<i class="fas fa-home"></i>
+							Homepage
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-gifts"></i>
+							Wishlist
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="christmas-form">
+			<h2>WishList 2020</h2>
+			<form name="santaForm" method="post" action="mailto:D190319C@sc.edu.my" enctype="text/plain" onsubmit="return validate();">
+				<div class="label">What is your name?</div>
+				<div class="inputfield">
+					<input type="text" name="name" size="20">
+				</div>
+
+				<div class="label">How old are you?</div>
+				<div class="inputfield">
+					<input type="text" name="age" size="3">
+				</div>
+
+				<div class="label">Is there anything want to tell Santa Claus?</div>
+				<textarea name="wish"></textarea>
+
+				<div class="label">Tell Santa Claus what christmas gift you<br> want and attache the link of photo!</div>
+				<textarea name="gift"></textarea>
+				<br>
+				<input type="submit" value="submit">
+			</form>
+		</div>
+
+</body>
+<script src="christmas.js"></script>
+</html>
